@@ -1,0 +1,379 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+
+
+//
+// GENECRIC MODULE STYLE
+// --------------------------------------------------
+.t3-module {
+  margin-bottom: 14px;
+  color: @moduleColor;
+  background: @moduleBackground;
+}
+
+// Module Title
+// ------------
+.module-title {
+  margin-bottom: 7px;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: @moduleTitleFontColor;
+  background: @moduleTitleBackground;
+  font-size: @moduleTitleFontSize;
+  font-weight: @moduleTitleFontWeight;
+  font-family: @moduleTitleFontFamily;
+  line-height: @moduleTitleFontSize + 6px;
+}
+
+// Module Content
+// --------------
+.module-ct {
+  .clearfix();
+  color: @moduleContentFontColor;
+  font-size: @moduleContentFontSize;
+  font-family: @moduleContentFontFamily;
+  line-height: @moduleContentFontSize + 3px;
+  a {
+    font-weight: bold;
+  }
+  p {
+    letter-spacing: normal;
+  }
+}
+
+.t3-sidebar-2 .module-ct {
+  padding: 7px;
+}
+
+// Module List
+// -----------
+.t3-module {
+  ul,
+  ol {
+    line-height: 1;
+    list-style: none;
+    margin-left: 0px;
+  }
+  ul.unstyled,
+  ol.unstyled,
+  ul.nav,
+  ol.nav {
+    margin-left: 0;
+  }
+}
+
+
+//
+// JOOMLA! MODULES
+// --------------------------------------------------
+
+// Menu
+// ----
+.module_menu {
+  .nav {
+    margin-bottom: @T3globalMargin;
+  }
+  
+  .nav > li {
+    border-top: 1px solid @hrBorder;
+  }
+  
+  .nav > li > a {
+    padding: 5px;
+  }
+  
+  // No top border
+  .nav > li:first-child {
+    border-top: 0;
+  }
+  
+  .nav > li:first-child > a {
+    padding-top: 0;
+    border-top: 0;
+  }
+  
+  // Hover state
+  .nav > li > a:hover {
+  }
+  
+  // Active state
+  .nav > li.active > a {
+  }
+}
+
+
+// Advertisement
+// -------------
+.bannergroup {
+}
+
+.banneritem {
+  a {
+    font-weight: bold;
+  }
+}
+
+.bannerfooter {
+  border-top: 1px solid @T3borderColor;
+  font-size: @T3smallerFontSize;
+  padding-top: @T3globalPadding / 2;
+  text-align: right;
+}
+
+
+// Categories
+// ----------
+.categories-module, ul.categories-module,
+.category-module, ul.category-module {
+  margin: 0;
+  
+  li {
+    list-style: none;
+    padding: (@baseLineHeight / 2) 0;
+    border-top: 1px solid @T3borderColor;
+    // Remove border for first item
+    &:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+  }
+  
+  h4 {
+    font-size: @baseFontSize;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+
+// News Feed
+// ----------
+.feed {
+  // Feed Title
+  h4 {
+    font-weight: bold;
+  }
+  // Feed list
+  .newsfeed,
+  ul.newsfeed {
+    border-top: 1px solid @hrBorder;
+    li {}
+    .feed-link, 
+    h5.feed-link {
+      font-size: @baseFontSize;
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+
+}
+
+
+// Latest Users 
+// ------------
+.latestusers,
+ul.latestusers {
+  margin-left: 0;
+  li {
+    background: @grayLighter;
+    display: inline-block;
+    padding: 5px 10px;
+    .border-radius (@baseBorderRadius);
+  }
+}
+
+
+// Stats 
+// ------
+.stats-module {
+  dt, dd {
+    display: inline-block;
+    margin: 0;
+  }
+  dt {
+    font-weight: bold;
+    width: 35%;
+  }
+  dd {
+    width: 60%;
+  }
+}
+
+// Popular Tags
+div.tagspopular ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+div.tagspopular ul li {
+  color: @gray;
+  display: inline-block;
+  margin: 0 5px 5px 0;
+}
+
+div.tagspopular ul li a {
+  background: @grayLighter;
+  border-radius: 3px;
+  color: @gray;
+  display: block;
+  padding: 2px 5px;
+}
+
+div.tagspopular ul li a:hover,
+div.tagspopular ul li a:focus,
+div.tagspopular ul li a:active {
+  background: @linkColorHover;
+  color: @white;
+  text-decoration: none;
+}
+
+// Similar tags
+div.tagssimilar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.tagssimilar ul li {
+  border-bottom: 1px solid @grayLighter;
+  padding: 8px 0;
+}
+
+div.tagssimilar ul li a {
+  color: @gray;
+}
+
+div.tagssimilar ul li a:hover,
+div.tagssimilar ul li a:focus,
+div.tagssimilar ul li a:active {
+  color: @linkColorHover;
+}
+
+// Donation
+// ------------
+.module-donation {
+  font-family: Arial,Helvetica,Sans-Serif;
+  .module-ct {
+    padding: 4px;
+    margin-top: 1px;
+    border: 2px solid #a32922;
+    .donateMessage {
+      color:#2D679A;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .paypalDonate {
+      text-align: right;
+      margin-bottom: 4px;
+    }
+    label {
+      color: #003c77;
+      float: left;
+      height: 21px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+      padding-left: 14px;
+      margin-bottom: 0px;
+    }
+    .donateSubmit {
+      width: 56px;
+      height: 21px;
+      float: right;
+      color: #fff;
+      cursor: pointer;
+      border: 1px solid #003c77;
+      background: no-repeat center;
+      background-color: #fff;
+      background-image: url("@{T3ImagePath}/donate-button.gif");
+    }
+    .blankAmount {
+      width: 54px;
+      height: 17px;
+      border: 1px solid;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      padding-left: 8px;
+      float:left;
+      margin-left: 15px;
+      margin-bottom: 0px;
+      border-color: #003C77;
+      border-radius: 0 0 0 0;
+      color: #003C77;
+      height: 11px;
+      width: 45px;
+      color: #003c77;
+    }
+    .paymentLogo {
+      clear:both;
+      margin:0 auto;
+      padding-top:8px;
+      text-align:center;
+    }
+  }
+}
+
+
+// JCalPro
+// ------------
+.jcalpro_events {
+  ul.jcalpro_events {
+    line-height: 0.9em;
+    margin: 0 -7px;
+    color: #C95245;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 10px;
+      background-position: 0 -2px;
+      background-image:  url("@{T3ImagePath}/bullet.png");
+      background-repeat: no-repeat;
+      line-height: 1.2em;
+      color: #C95245;
+      padding: 0 0 0 13px;
+    }
+    .jcalpro_no_events,
+    .jcalpro_events_link {
+      color: @black;
+      background-image: none;
+      a {
+        color: @black;
+        &:link, &:active, &:visited {
+          text-decoration: none;
+        }
+        &:focus, &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .jcalpro_events_date {
+      font-weight: bold;
+    }
+    .month-separator {
+      color: #000000;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin: 0 14px 10px;
+      background-image: none;
+      border-top: 1px solid #777777;
+      border-bottom: 1px solid #777777;
+    }
+  }
+}

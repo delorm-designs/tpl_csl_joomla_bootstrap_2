@@ -1,0 +1,16 @@
+.phocamaps .pmroute #fromPMAddressPlgPM1, .pmroute #fromPMAddressPlgPM1 {
+    height: 10px;
+    line-height: 10px;
+    margin-top: 10px;
+}
+
+.phocamaps img {
+    max-width: none !important;
+}
+
+div.ss-serie-player, div.ss-sermons-player, div.ss-speaker-player {
+	text-align: center;
+	margin: 0px 12px;
+	width: inherit;
+	margin-bottom: 10px;
+}

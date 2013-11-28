@@ -1,0 +1,135 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+
+
+// -------------------------------------------------------
+//  DROPDOWN MENU
+// -------------------------------------------------------
+.t3-mainnav {
+  margin-bottom: 5px;
+  background-image: url("@{T3ImagePath}/bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  .navbar {
+    margin-bottom: 0px;
+    background-image: url("@{T3ImagePath}/welcome-to.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    .navbar-inner {
+      border: none;
+      background: none;
+      box-shadow: none;
+      min-height: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+      ul.menu {
+        left: 0;
+        padding: 0;
+        float: right;
+        display: block;
+        list-style: none;
+        margin: 0 10px 0 0;
+        position: relative;
+        li {
+          display: inline;
+        }
+        li > a {
+          padding: 0 12px;
+          line-height: 25px;
+          text-transform: uppercase;
+          border-left: 1px solid @dropdownDividerSide;
+          color: @dropdownFontColor;
+          font-size: @dropdownFontSize;
+          font-weight: @dropdownFontWeight;
+          font-family: @dropdownFontFamily;
+        }
+        li > a:hover {
+            color: @dropdownFontHoverColor;
+            text-decoration: none;
+            background: none;
+        }
+        li:first-child > a {
+            border-left: none;
+        }
+        .active > a {
+            color: @dropdownFontActiveColor;
+            background: none;
+            box-shadow: none;
+            text-decoration: none;
+        }
+        .active > a:hover,
+        .active > a:focus {
+            color: @dropdownFontHoverColor;
+            background: none;
+            box-shadow: none;
+            text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// -------------------------------------------------------
+//  ACCORDION MENU
+// -------------------------------------------------------
+.t3-sidebar ul.menu {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  li {
+    margin: 0 0 3px;
+    min-height: 20px;
+    line-height: normal;
+    background-color: @accordionCollapsedBaseColor;
+  }
+  li a:link,
+  li a:active,
+  li a:visited {
+    display: block;
+    margin: 0px;
+    padding: 2px 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @accordionFontColor;
+    font-size: @accordionFontSize;
+    font-weight: @accordionFontWeight;
+    font-family: @accordionFontFamily;
+  }
+  li a:focus,
+  li a:hover {
+    background-color: @accordionCollapsedHoverColor;
+    text-decoration: underline;
+  }
+  li.active {
+    background-color: @accordionCollapsedActiveColor;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    overflow: hidden;
+    background-color: @accordionBackgroudColor;
+    li {
+      margin: 3px 0px 0px;
+      background-color: @accordionExpandedBaseColor;
+    }
+    li a:focus,
+    li a:hover {
+      background-color: @accordionExpandedHoverColor;
+      text-decoration: underline;
+    }
+    li.active {
+      background-color: @accordionExpandedActiveColor;
+    }
+  }
+}

@@ -1,0 +1,216 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org
+ *------------------------------------------------------------------------------
+ */
+
+// ---------------------------------------------------------
+// HEADER
+// ---------------------------------------------------------
+.t3-header {
+  span[style] {
+    font-size: 13px !important;
+  }
+  .header-1 {
+    height: 155px;
+    position: relative;
+    color: @T3primaryColor;
+    font-size: 13px !important;
+    font-family: @sansFontFamily;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .header-2 {
+    margin-top: 30px;
+    table[style] {
+      width: 100% !important;
+    }
+  }
+  height: 155px;
+  line-height: 1.25 !important;
+}
+
+
+// Logo
+// ---------------------------------------------------------
+.logo {
+  float: left;
+  h1, h1 a {
+    line-height: 155px;
+    margin: 0;
+  }
+}
+
+
+// Logo Image
+// ----------
+.logo-image {
+  //overflow: hidden;
+  a {
+    height: 155px;
+    display: table-cell;
+    vertical-align: bottom;  //middle
+  }
+  span, small {
+    display: none;
+  }
+}
+
+// Logo Text
+// ----------
+.logo-text {
+  a {
+    color: @grayDark;
+    text-decoration: none;
+    font-size: @fontSizeLarge;
+  }
+  &:hover a,
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: none;
+  }
+  .site-slogan {
+    display: block;
+    font-size: @baseFontSize;
+    margin-top: 5px;
+  }
+}
+
+
+
+// ---------------------------------------------------------
+// MAIN BODY
+// ---------------------------------------------------------
+.t3-mainbody {
+  hr.header-divider {
+    height: 1px;
+    margin: 5px 5px 5px 0;
+    border-top: 1px solid @contentBorderColor;
+    border-left: medium none;
+    border-right: medium none;
+    border-bottom: medium none;
+  }
+}
+
+// Content
+// -------
+.t3-content {
+  .t3-wrapper {
+    padding: 0 5px;
+    border-left: 1px solid @contentBorderColor;
+    border-right: 1px solid @contentBorderColor;
+  }
+}
+
+// Sidebars
+// --------
+.t3-sidebar {
+}
+
+.t3-sidebar-1 {
+  .t3-module {
+    margin-left: 5px;
+  }
+}
+
+.t3-sidebar-2 {
+  margin-top: -31px;
+}
+
+
+
+// ---------------------------------------------------------
+// FOOTER
+// ---------------------------------------------------------
+.t3-footer {
+  .clearfix();
+  color: @black;
+  font-size: 13px;
+  small {
+    color: @black;
+    font-size: 11px;
+  }
+  p[style],
+  span[style] {
+    color: @black !important;
+    font-size: 13px !important;
+    font-family: @serifFontFamily !important;
+    small {
+      font-size: 11px !important;
+    }
+  }
+  a {
+    &:link, &:visited, &:active {
+      color: @black;
+      text-decoration: underline;
+    }
+    &:hover, &:active, &:focus {
+      color: lighten(@black,50%);
+    }
+  }
+  .container {
+    padding-top: 10px;
+    border-top: 1px solid @contentBorderColor;
+    .t3-module {
+      margin-bottom: 0px;
+    }
+
+    p {
+      margin: 0 0 15px;
+      line-height: normal;
+      letter-spacing: normal;
+    }
+  }
+  margin-top: 5px;
+}
+
+// Copyright
+// ---------
+.t3-copyright {
+  .clearfix();
+}
+
+.copyright {
+  float: left;
+}
+
+// ---------------------------------------------------------
+// MISC.
+// ---------------------------------------------------------
+a.black-link {
+  color: @black;
+}
+
+a.link-button {
+  right: 0px;
+  bottom: 0px;
+  margin-top: 20px;
+  position: absolute;
+  cursor: pointer;
+  line-height: 18px;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: @linkButtonWidth;
+  color: @linkButtonTextColor;
+  //font-size: @linkButtonFontSize;
+  //font-family: @linkButtonFontFamily;
+  border: 1px solid @linkButtonBaseColor;
+  background-color: @linkButtonBaseColor;
+}
+a.link-button:focus,
+a.link-button:hover {
+  color: @linkButtonBaseColor;
+  background-color: @linkButtonHoverColor;
+}
