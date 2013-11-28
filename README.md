@@ -1,2 +1,3 @@
-Centers-for-Spiritual-Living
+CSL Joomla 2.5 Template
 ============================
+
