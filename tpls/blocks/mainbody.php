@@ -21,7 +21,7 @@ defined('_JEXEC') or die;
       "tablet"  : [ "span12"        , "span6 spanfirst"   , "span6"             ]
     },
     "one_sidebar1": {
-      "default" : [ "span9 pull-right"         , "span3"             ],
+      "default" : [ "span12", "span10 pull-right", "span2"             ],
       "wide"    : [],
       "xtablet" : [ "span8 pull-right"         , "span4"             ],
       "tablet"  : [ "span12"        , "span12 spanfirst"  ]

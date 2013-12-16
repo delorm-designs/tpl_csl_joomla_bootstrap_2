@@ -159,16 +159,23 @@ h6 {
 // Page Subheader
 // --------------
 .page-subheader {
-  border-bottom: 1px solid @T3borderColor;
-  margin: 0 0 @T3globalMargin;
+  margin: 0 12px @T3globalMargin;
   .clearfix();
 }
 
 .page-subtitle,
 .page-subheader h2 {
-  line-height: 1;
+  line-height: 32px;
+  font-size: 28px;
   margin: 0;
 }
+
+.page-subtitle,
+.page-subheader h2 small {
+  line-height: 29px;
+  font-size: 24px;
+}
+
 
 .page-header + .page-subheader {
   margin-top: -@T3globalMargin; //If there is page header, then omit the space before page subheader
@@ -189,6 +196,8 @@ h6 {
 // Smaller "Article Title" in Blog and List layout
 h2.article-title,
 .article-header h2 {
+  line-height: 42px;
+  font-size: 36px;
 }
 
 
@@ -198,6 +207,9 @@ h2.article-title,
   font-weight: bold;
 }
 
+.article-intro {
+  font-size: 14px;
+}
 
 
 // LISTS
