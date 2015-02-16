@@ -12,7 +12,6 @@
  *------------------------------------------------------------------------------
  */
 
-
 // no direct access
 defined ( '_JEXEC' ) or die ( 'Restricted access' ); 
 
@@ -26,8 +25,6 @@ if(!defined('T3')){
 		throw new Exception(JText::_('T3_MISSING_T3_PLUGIN'), 500);
 	}
 }
-
-$t3app = T3::getApp($this);
 
 $this->addStylesheet (T3_TEMPLATE_URL.'/css/component.css');
 
